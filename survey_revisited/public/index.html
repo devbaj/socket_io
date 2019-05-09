@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Survey</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script src="/js/main.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="results"></div>
+		<form>
+			<p class="formitem">
+				Your Name:
+				<input type="text" name="name" id="name">
+			</p>
+			<p class="formitem">
+				Dojo Location:
+				<select name="loc" id="loc">
+					<option value="OC">Orange County</option>
+					<option value="Seattle">Seattle</option>
+					<option value="Boise">Boise</option>
+					<option value="San Jose">San Jose</option>
+				</select>
+			</p>
+			<p class="formitem">
+				Favorite Language
+				<select name="lang" id="lang">
+					<option value="js">Javascript</option>
+					<option value="python">Python</option>
+					<option value="swift">Swift</option>
+					<option value="c#">C#</option>
+				</select>
+			</p>
+			<p class="formitem">
+				Comment: <span class="opt">(optional)</span>
+				<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+			</p>
+			<button type="submit">Submit</button>
+		</form>
+</div>
+</body>
+</html>
