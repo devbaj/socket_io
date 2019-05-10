@@ -1,0 +1,37 @@
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.btn-row{
+	display: flex;
+	flex-flow: row nowrap;
+	align-content: center;
+	justify-content: space-evenly;
+	width: 100%;
+	height: auto;
+}
+button{
+	width: 25%;
+	height: 150px;
+}
+.green{
+	background-color: green;
+}
+.red {
+	background-color: red;
+}
+.blue {
+	background-color: blue;
+}
