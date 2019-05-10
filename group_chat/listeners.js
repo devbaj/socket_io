@@ -1,7 +1,7 @@
 module.exports = (io) => {
 	io.on('connect', socket => {
-		var broadcast = require('./sockets/broadcasts');
-		var emit = require('./sockets/emits');
+		var broadcast = require('./emitters/broadcasts');
+		var emit = require('./emitters/emits');
 		console.log('connected to client')
 		// * For single-client emits, emit.[callback(socket)]
 		// * For broadcasts to all but specific client, broadcast.[callback(socket)]

@@ -10,4 +10,4 @@ const server = app.listen(8000, () => {
 	console.log("server listening on port 8000");
 })
 const io = require('socket.io')(server);
-require('./socket.js')(io);
+require('./listeners.js/index.js')(io);
